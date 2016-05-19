@@ -1,0 +1,116 @@
+.work-section
+  background-color: $bg-color
+  padding-top: 2rem
+  overflow: hidden
+  h2
+    margin: 0
+    text-align: center
+    margin-bottom: 2rem
+
+.work-belt
+  width: 200%
+  position: relative
+  left: 0%
+  +transition
+
+.thumb-wrap, .work-wrap
+  width: 50%
+  float: left
+
+.thumb-container
+  max-width: 60%
+  padding-bottom: 2rem
+  margin: 0 auto
+  +clearfix
+
+  @media screen and (max-width: 1150px)
+    max-width: 80%
+
+  .thumb-unit
+    display: block
+    width: 32%
+    margin: 0 .5% 10px .5%
+    float: left
+    position: relative
+    padding-top: 20%
+    //overflow: hidden
+    background:
+      position: center center
+      repeat: no-repeat
+      size: cover
+    box-shadow: 0px 2px 4px rgba(0,0,0, .5)
+    border-radius: 2px
+    +perspective(300)
+
+    @media screen and (max-width: 620px)
+      width: 48%
+      padding-top: 25%
+
+    .thumb-overlay
+      +position(absolute, 0% 0px null 0px)
+      height: 100%
+      background: fade-out($text-color, 0.1)
+      text-align: center
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-around)
+      +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+
+
+      h3
+        display: block
+        color: $bg-color
+        padding: 20px 10px
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 1.2rem
+        font-weight: 200
+        text-transform: capitalize
+        letter-spacing: 2px
+
+        @media screen and (max-width: 620px)
+          font-size: 1rem
+
+
+    &:hover
+      z-index: 2
+      .thumb-overlay
+        @extend %animation
+
+.work-container
+  max-width: 600px
+  padding-bottom: 2rem
+  margin: 0 auto
+  position: relative
+  //+clearfix
+
+  h4
+    color: $accent-color
+    font-weight: 300
+    font-size: 1.5rem
+    text-transform: uppercase
+    margin: 0 0 20px
+
+  img
+    max-width: 100%
+
+  .work-return
+    +size(40px)
+    cursor: pointer
+    opacity: 0.5
+    +position(absolute, -4px null null -60px)
+
+
+
+    path
+      fill: $accent-color
+
+    &:hover
+      opacity: 1
+
+@media  (max-width: 740px)
+  .work-container
+    .work-return
+      left: 0px
+
+    h4
+      margin-left: 60px
