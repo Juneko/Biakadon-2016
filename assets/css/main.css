@@ -531,7 +531,8 @@ header {
   background-image: url(/assets/img/banner-bg.jpg);
   height: 20rem;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .banner_wrapper .text_wrapper {
     display: block;
     width: 90%;
@@ -566,18 +567,17 @@ header {
 
 .work-section {
   background-color: #eeeded;
-  padding-top: 2rem;
   overflow: hidden; }
   .work-section h2 {
     margin: 0;
     text-align: center;
-    margin-bottom: 2rem; }
+    padding: 4rem 0; }
 
 .work-belt {
   width: 200%;
   position: relative;
   left: 0%;
-  transition: all 0.15s ease-out 0s; }
+  transition: all 800ms; }
 
 .thumb-wrap, .work-wrap {
   width: 50%;
@@ -657,7 +657,8 @@ header {
   max-width: 600px;
   padding-bottom: 2rem;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  display: none; }
   .work-container h4 {
     color: #022750;
     font-weight: 300;
@@ -689,7 +690,7 @@ header {
   padding: 50px 30px; }
   .lockup #logo {
     float: left;
-    margin-right: 30px; }
+    margin: 0 30px 30px 0; }
     .lockup #logo:after {
       content: "";
       display: table;
