@@ -23,8 +23,8 @@ function workBelt() {
     $('.work-container').show();
   });
 
-  $('.work-return').click(function () {
+  $('.work-return, .work-return-bottom').click(function () {
     $('.work-belt').css('left', '0%');
-    $('.work-container').hide(800);
+    $('.work-container').hide();
   });
 }
