@@ -808,43 +808,66 @@ header {
     text-align: center;
     padding: 4rem 0 0 0; }
   .contact-section .contact-wrap {
+    width: 90%;
     max-width: 450px;
     margin: 0 auto;
-    padding-bottom: 50px;
-    -ms-flex-align: center;
-        align-items: center; }
-    .contact-section .contact-wrap form .contact-name, .contact-section .contact-wrap form .contact-email, .contact-section .contact-wrap form .contact-message {
-      width: 48%;
-      float: left;
-      margin-bottom: 5px; }
-    .contact-section .contact-wrap form .contact-name {
-      margin-right: 2%; }
-    .contact-section .contact-wrap form .contact-email {
-      margin-left: 2%; }
-    .contact-section .contact-wrap form .contact-message {
+    padding-bottom: 50px; }
+    @media screen and (max-width: 620px) {
+      .contact-section .contact-wrap {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0; } }
+    .contact-section .contact-wrap form {
       width: 100%;
-      float: left;
-      margin-bottom: 5px; }
-      .contact-section .contact-wrap form .contact-message textarea {
+      margin: 0;
+      padding: 0; }
+      .contact-section .contact-wrap form .contact-name, .contact-section .contact-wrap form .contact-email, .contact-section .contact-wrap form .contact-message {
+        width: 48%;
+        float: left;
+        margin-bottom: 5px; }
+      .contact-section .contact-wrap form .contact-name {
+        margin-right: 2%; }
+      .contact-section .contact-wrap form .contact-email {
+        margin-left: 2%; }
+      .contact-section .contact-wrap form .contact-message {
         width: 100%;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-        border-radius: 2px;
+        float: left;
+        margin-bottom: 5px; }
+        .contact-section .contact-wrap form .contact-message textarea {
+          width: 100%;
+          border-radius: 2px;
+          padding: .25rem;
+          min-height: 8rem; }
+      .contact-section .contact-wrap form label {
+        display: block;
+        margin: 10px 0 5px 0;
+        color: white;
+        font-weight: 100;
+        font-size: .7rem; }
+      .contact-section .contact-wrap form input {
+        width: 98%;
         padding: .25rem;
-        min-height: 8rem; }
-    .contact-section .contact-wrap form label {
-      display: block;
-      margin: 10px 0 5px 0;
-      color: white;
-      font-weight: 100;
-      font-size: .8rem; }
-    .contact-section .contact-wrap form input {
-      width: 98%;
-      padding: .25rem;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-      border-radius: 2px; }
-    .contact-section .contact-wrap form input[type="submit"] {
-      width: 100px;
-      margin: .8rem 40%; }
+        border-radius: 2px; }
+      .contact-section .contact-wrap form input[type="submit"] {
+        width: 120px;
+        margin: .8rem 38%;
+        background-color: #1b8520;
+        border-radius: 2px;
+        font-family: 'Fira Sans', sans-serif; }
+    @media screen and (max-width: 620px) {
+      .contact-section .contact-wrap form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0; }
+        .contact-section .contact-wrap form .contact-name, .contact-section .contact-wrap form .contact-email, .contact-section .contact-wrap form .contact-message {
+          width: 100%;
+          float: none;
+          padding: 0; }
+        .contact-section .contact-wrap form input {
+          max-width: 90%;
+          margin-left: 0; }
+        .contact-section .contact-wrap form textarea {
+          max-width: 90%; } }
 
 .home-wrap {
   width: 100%; }
