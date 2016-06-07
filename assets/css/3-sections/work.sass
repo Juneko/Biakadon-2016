@@ -42,12 +42,14 @@
     box-shadow: 0px 2px 4px rgba(0,0,0, .5)
     border-radius: 2px
     +perspective(300)
+    cursor: pointer
 
 
     img
       width: 100%
       border-radius: 2px
       vertical-align: middle
+
 
     @media screen and (max-width: 620px)
       width: 48%
@@ -66,7 +68,7 @@
         +transform(none)
         background: fade-out($text-color, 0.4)
 
-      h3
+      strong
         display: block
         color: $bg-color
         padding: 20px 10px
@@ -108,25 +110,40 @@
     max-width: 100%
     border-radius: 2px
     top: 1%
+    margin-bottom: 10px
+    box-shadow: 0px 4px 4px rgba(0,0,0, .3)
 
   .work-return
     +size(40px)
     cursor: pointer
     opacity: 0.5
+    overflow: hidden
     +position(absolute, -4px null null -60px)
+
+    svg
+      +size(40px)
+      path
+        fill: $accent-color
+
+    &:hover
+      opacity: 1
 
   .work-return-bottom
     +size(40px)
     cursor: pointer
     opacity: 0.5
+    margin: 0 auto
 
-
-
-    path
-      fill: $accent-color
+    svg
+      +size(40px)
+      path
+        fill: $accent-color
 
     &:hover
       opacity: 1
+
+    .see-more
+      text-align: center
 
 @media  (max-width: 740px)
   .work-container

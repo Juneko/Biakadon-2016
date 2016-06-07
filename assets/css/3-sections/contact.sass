@@ -1,0 +1,55 @@
+.contact-section
+  background-color: $accent-color
+
+  h2
+    margin: 0
+    text-align: center
+    padding: 4rem 0 0 0
+
+  .contact-wrap
+    //width: 60%
+    max-width: 450px
+    margin: 0 auto
+    padding-bottom: 50px
+    align-items: center
+
+    form
+      .contact-name, .contact-email, .contact-message
+        width: 48%
+        float: left
+        margin-bottom: 5px
+
+      .contact-name
+        margin-right: 2%
+
+      .contact-email
+        margin-left: 2%
+
+      .contact-message
+        width: 100%
+        float: left
+        margin-bottom: 5px
+
+        textarea
+          width: 100%
+          box-shadow: 0px 2px 4px rgba(0,0,0, .5)
+          border-radius: 2px
+          padding: .25rem
+          min-height: 8rem
+
+      label
+        display: block
+        margin: 10px 0 5px 0
+        color: white
+        font-weight: 100
+        font-size: .8rem
+
+      input
+        width: 98%
+        padding: .25rem
+        box-shadow: 0px 2px 4px rgba(0,0,0, .5)
+        border-radius: 2px
+
+      input[type="submit"]
+        width: 100px
+        margin: .8rem 40%
