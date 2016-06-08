@@ -1,4 +1,22 @@
 section.contact-section
   h2#contato Contato
   .contact-wrap
-    script(type="text/javascript", src="https://form.jotformz.com/jsform/61535481111649")
+    form(action="http://formspree.io/sitecontato@biakadon.com.br" method="post")
+      .contact-name
+        label Nome:
+        input(type="text", name="Nome")
+      .contact-email  
+        label E-mail: 
+        input(type="email", name="_replyto")
+      .contact-message
+        label Mensagem:
+        textarea(name="Messagem")
+      
+      .submit-button
+        input.submit(type="submit", value="Enviar") 
+      
+      
+      input(type="hidden", name="_next", value="http://localhost:3000")
+      input(type="hidden", name="_subject", value="Novo contato do Site!")
+
+      

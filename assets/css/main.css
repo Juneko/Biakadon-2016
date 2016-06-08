@@ -845,12 +845,12 @@ header {
         margin: 0 auto;
         padding: 0; } }
     .contact-section .contact-wrap form {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
-      padding: 0; }
+      position: relative; }
       .contact-section .contact-wrap form .contact-name, .contact-section .contact-wrap form .contact-email, .contact-section .contact-wrap form .contact-message {
-        width: 48%;
-        margin-bottom: 5px; }
+        width: 47%;
+        margin-bottom: 15px; }
       .contact-section .contact-wrap form .contact-name {
         margin-right: 3px;
         float: left; }
@@ -866,17 +866,12 @@ header {
           border-radius: 2px;
           padding: .25rem;
           min-height: 8rem; }
-          .contact-section .contact-wrap form .contact-message textarea:after {
-            content: "";
-            display: table;
-            clear: both; }
-      .contact-section .contact-wrap form .submit {
-        display: block;
-        margin: 0 auto; }
-        .contact-section .contact-wrap form .submit input[type="submit"] {
-          width: 150px;
+      .contact-section .contact-wrap form .submit-button {
+        padding: 0;
+        margin: 0 30%; }
+        .contact-section .contact-wrap form .submit-button input[type="submit"] {
+          width: 170px;
           margin: .8rem;
-          text-align: center;
           color: white;
           background-color: #1b8520;
           border: none;
@@ -892,9 +887,10 @@ header {
         font-weight: 100;
         font-size: .8rem; }
       .contact-section .contact-wrap form input {
-        width: 90%;
+        width: 100%;
         padding: .45rem;
         border-radius: 2px;
+        margin: 0 auto;
         border: none;
         outline: none; }
     @media screen and (max-width: 620px) {
@@ -910,7 +906,15 @@ header {
           max-width: 90%;
           margin-left: 0; }
         .contact-section .contact-wrap form textarea {
-          max-width: 90%; } }
+          max-width: 90%; }
+        .contact-section .contact-wrap form .submit-button {
+          padding: 20px 0;
+          margin: 0 25%; } }
+
+.fachadas-comerciais .title {
+  margin: 0;
+  text-align: center;
+  padding: 4rem 0 0 0; }
 
 .home-wrap {
   width: 100%; }

@@ -19,12 +19,12 @@
       padding: 0
 
     form
-      width: 90%
+      width: 100%
       margin: 0 auto
-      padding: 0
+      position: relative
       .contact-name, .contact-email, .contact-message
-        width: 48%
-        margin-bottom: 5px
+        width: 47%
+        margin-bottom: 15px
 
       .contact-name
         margin-right: 3px
@@ -45,15 +45,13 @@
           border-radius: 2px
           padding: .25rem
           min-height: 8rem
-          +clearfix
-      .submit
-        display: block
-        margin: 0 auto
 
+      .submit-button
+        padding: 0
+        margin: 0 30%
         input[type="submit"]
-          width: 150px
+          width: 170px
           margin: .8rem
-          text-align: center
           color: white
           background-color: #1b8520
           border: none
@@ -72,9 +70,10 @@
         font-size: .8rem
 
       input
-        width: 90%
+        width: 100%
         padding: .45rem
         border-radius: 2px
+        margin: 0 auto
         border: none
         outline: none
 
@@ -94,3 +93,7 @@
 
         textarea
           max-width: 90%
+
+        .submit-button
+          padding: 20px 0
+          margin: 0 25%
