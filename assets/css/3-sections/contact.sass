@@ -7,10 +7,11 @@
     padding: 4rem 0 0 0
 
   .contact-wrap
-    width: 90%
+    width: 80%
     max-width: 450px
     margin: 0 auto
     padding-bottom: 50px
+    position: relative
 
     @media screen and (max-width: 620px)
       width: 80%
@@ -18,19 +19,21 @@
       padding: 0
 
     form
-      width: 100%
-      margin: 0
+      width: 90%
+      margin: 0 auto
       padding: 0
       .contact-name, .contact-email, .contact-message
         width: 48%
-        float: left
         margin-bottom: 5px
 
       .contact-name
-        margin-right: 2%
+        margin-right: 3px
+        float: left
+
 
       .contact-email
-        margin-left: 2%
+        float: right
+        margin-left: 3px
 
       .contact-message
         width: 100%
@@ -42,26 +45,38 @@
           border-radius: 2px
           padding: .25rem
           min-height: 8rem
+          +clearfix
+      .submit
+        display: block
+        margin: 0 auto
+
+        input[type="submit"]
+          width: 150px
+          margin: .8rem
+          text-align: center
+          color: white
+          background-color: #1b8520
+          border: none
+          border-radius: 20px
+          font-family: 'Fira Sans', sans-serif;
+          font-weight: 100
+          font-size: 1rem
+          cursor: pointer
+
 
       label
         display: block
         margin: 10px 0 5px 0
         color: white
         font-weight: 100
-        font-size: .7rem
+        font-size: .8rem
 
       input
-        width: 98%
-        padding: .25rem
+        width: 90%
+        padding: .45rem
         border-radius: 2px
-
-      input[type="submit"]
-        width: 120px
-        margin: .8rem 38%
-        background-color: #1b8520
-        border-radius: 2px
-        font-family: 'Fira Sans', sans-serif;
-
+        border: none
+        outline: none
 
     @media screen and (max-width: 620px)
 
@@ -72,7 +87,7 @@
         .contact-name, .contact-email, .contact-message
           width: 100%
           float: none
-          padding: 0
+          margin: 0
         input
           max-width: 90%
           margin-left: 0
