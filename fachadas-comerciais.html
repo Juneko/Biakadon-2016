@@ -5,12 +5,23 @@ title: Biakadon - Fachada Comercial
 
 <div class="home-wrap">
 
-  {% include header-fachada.html %}
+  {% include header-secondary.html %}
 
   {% include fachada.html %}
+
+  {% include contact.html %}
 
   {% include footer-secondary.html %}
 
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/assets/js/functions.js"></script>
+<script src="/assets/js/jquery.flexslider-min.js"></script>
+<script>
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+  });
+</script>
+</script>
 </div>
