@@ -808,6 +808,13 @@ h2 {
   letter-spacing: 1px;
   font-weight: 400; }
 
+h5 {
+  font-size: 1rem;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: italic; }
+
 a {
   color: white;
   font-size: .9rem;
@@ -817,7 +824,7 @@ a {
   text-decoration: none; }
 
 p {
-  color: #666;
+  color: #777;
   font-size: .9rem;
   font-weight: 300; }
 
@@ -1130,45 +1137,99 @@ header {
       margin-left: 60px; } }
 
 footer {
-  float: left; }
-
-.lockup {
-  padding: 50px 30px; }
-  .lockup #logo {
-    float: left;
-    margin: 0 30px 30px 0; }
-    .lockup #logo:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .lockup .content-wrap {
-    float: left; }
-    .lockup .content-wrap ul {
+  width: 100%;
+  clear: both; }
+  footer .lockup {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0;
+    margin: 0 auto; }
+    footer .lockup .logo-footer {
+      display: block;
+      float: left;
       padding: 0;
-      margin: 0; }
-      .lockup .content-wrap ul li {
-        display: inline;
-        margin-right: 10px; }
-        .lockup .content-wrap ul li a {
-          color: #4A7DB5; }
-          .lockup .content-wrap ul li a:hover {
-            color: #022750; }
-    .lockup .content-wrap .copyright {
-      font-size: .8rem;
-      font-style: italic;
+      margin-bottom: 20px;
+      float: left; }
+      @media screen and (max-width: 620px) {
+        footer .lockup .logo-footer {
+          float: none;
+          margin: 0 auto;
+          text-align: center; } }
+    footer .lockup h5 {
+      padding: 0;
       margin: 0;
-      text-transform: uppercase;
-      color: #777; }
+      text-align: center; }
+    footer .lockup .content-wrap {
+      display: block;
+      float: left;
+      margin-left: 20px; }
+      footer .lockup .content-wrap ul {
+        padding: 0;
+        margin: 0; }
+        footer .lockup .content-wrap ul li {
+          display: inline;
+          margin-right: 10px; }
+          footer .lockup .content-wrap ul li a {
+            color: #4A7DB5; }
+            footer .lockup .content-wrap ul li a:hover {
+              color: #022750; }
+      @media screen and (max-width: 620px) {
+        footer .lockup .content-wrap {
+          float: none;
+          margin: 0 auto;
+          padding-top: 20px;
+          text-align: center; } }
+    footer .lockup .contact-footer {
+      float: right;
+      margin-bottom: 30px; }
+      footer .lockup .contact-footer:after {
+        content: "";
+        display: table;
+        clear: both; }
+      footer .lockup .contact-footer .social-media {
+        height: 20px;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center; }
+        footer .lockup .contact-footer .social-media .fa-facebook-square {
+          color: #3b5998; }
+        footer .lockup .contact-footer .social-media .fa-linkedin-square {
+          color: #0077b5; }
+        footer .lockup .contact-footer .social-media .fa-pinterest-square {
+          color: #cb2027; }
+        footer .lockup .contact-footer .social-media i {
+          padding: 0 10px; }
+      @media screen and (max-width: 620px) {
+        footer .lockup .contact-footer {
+          float: none;
+          margin-top: 40px; } }
 
-@media screen and (max-width: 620px) {
-  .lockup {
-    padding: 20px 20px; }
-    .lockup #logo {
-      margin: 0 20px 20px 0; }
-    .lockup .content-wrap {
-      padding: 5px; }
-      .lockup .content-wrap .copyright {
-        font-size: .6rem; } }
+.bottom-wrapper {
+  background-color: #777;
+  clear: both; }
+  .bottom-wrapper h5 {
+    text-align: center;
+    padding: 5px;
+    margin: 0; }
+  .bottom-wrapper .copyright {
+    display: block;
+    font-size: .8rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-transform: uppercase;
+    color: white;
+    clear: both; }
+  @media screen and (max-width: 620px) {
+    .bottom-wrapper .lockup {
+      padding: 20px 20px; }
+      .bottom-wrapper .lockup #logo {
+        margin: 0 20px 20px 0; }
+      .bottom-wrapper .lockup .content-wrap {
+        padding: 5px; }
+    .bottom-wrapper .copyright {
+      font-size: .6rem; } }
 
 .contact-section {
   background-color: #022750;
