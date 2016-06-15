@@ -3,16 +3,64 @@ header
 	text-align: center
 	margin: 0px
 
+	.top-bar
+		//width: 100%
+		+clearfix
+		.contact-top-bar
+			float: right
+			padding: 40px 40px 0 0
+			+clearfix
 
-	nav
-		#logo
+			.phone, .email
+
+				i
+					color: $accent-color
+				a
+					color: $text-color
+					font-size: 1em
+					font-weight: 400
+					margin-left: .4rem
+					text-transform: inherit
+
+
+
+	.social-media
+		height: 20px
+		padding: 10px
+		.fa-facebook-square
+			color: #3b5998
+		.fa-linkedin-square
+			color: #0077b5
+		.fa-pinterest-square
+			color: #cb2027
+		i
+			padding: 0 10px
+
+	@media screen and (max-width: 750px)
+		.social-media
 			margin: 0 auto
-			img
-				width: 320px
-				padding: 3rem 0 2rem 0
-				@media screen and (max-width: 430px)
-					width: 280px
+			float: none
+		.top-bar
+			.contact-top-bar
+				float: none
+				margin: 0
+				padding: 40px 0 0 0
+	#logo
+		display: block
+		float: left
+		padding: 2.5rem 0 2rem 2rem
 
+		+clearfix
+		@media screen and (max-width: 750px)
+			margin: 0 auto
+			float: none
+			padding: 2.5rem 0 2rem 0
+		img
+			width: 370px
+
+			@media screen and (max-width: 430px)
+				width: 280px
+	nav
 		.handle
 			width: 100%
 			background-color: $accent-color
@@ -30,19 +78,22 @@ header
 
 			@media screen and (max-width: 955px)
 				display: block
-		ul
-			background-color: $text-color
-			overflow: hidden
-			list-style: none
-			margin: 0
-			padding: 0
-			+transition(max-height 400ms )
+		.navigation
+			width: 100%
+			ul
+				background-color: $text-color
+				overflow: hidden
+				list-style: none
+				margin: 0
+				padding: 0
+				+transition-property(max-height)
+				+transition-duration(400ms)
 
-			li
-				display: inline-block
-				padding: 15px
-				&:hover
-					background: $accent-color
+				li
+					display: inline-block
+					padding: 15px
+					&:hover
+						background: $accent-color
 
 
 

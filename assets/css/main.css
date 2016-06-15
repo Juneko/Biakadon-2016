@@ -825,13 +825,61 @@ header {
   width: 100%;
   text-align: center;
   margin: 0px; }
-  header nav #logo {
-    margin: 0 auto; }
-    header nav #logo img {
-      width: 320px;
-      padding: 3rem 0 2rem 0; }
+  header .top-bar:after {
+    content: "";
+    display: table;
+    clear: both; }
+  header .top-bar .contact-top-bar {
+    float: right;
+    padding: 40px 40px 0 0; }
+    header .top-bar .contact-top-bar:after {
+      content: "";
+      display: table;
+      clear: both; }
+    header .top-bar .contact-top-bar .phone i, header .top-bar .contact-top-bar .email i {
+      color: #022750; }
+    header .top-bar .contact-top-bar .phone a, header .top-bar .contact-top-bar .email a {
+      color: #4A7DB5;
+      font-size: 1em;
+      font-weight: 400;
+      margin-left: .4rem;
+      text-transform: inherit; }
+  header .social-media {
+    height: 20px;
+    padding: 10px; }
+    header .social-media .fa-facebook-square {
+      color: #3b5998; }
+    header .social-media .fa-linkedin-square {
+      color: #0077b5; }
+    header .social-media .fa-pinterest-square {
+      color: #cb2027; }
+    header .social-media i {
+      padding: 0 10px; }
+  @media screen and (max-width: 750px) {
+    header .social-media {
+      margin: 0 auto;
+      float: none; }
+    header .top-bar .contact-top-bar {
+      float: none;
+      margin: 0;
+      padding: 40px 0 0 0; } }
+  header #logo {
+    display: block;
+    float: left;
+    padding: 2.5rem 0 2rem 2rem; }
+    header #logo:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (max-width: 750px) {
+      header #logo {
+        margin: 0 auto;
+        float: none;
+        padding: 2.5rem 0 2rem 0; } }
+    header #logo img {
+      width: 370px; }
       @media screen and (max-width: 430px) {
-        header nav #logo img {
+        header #logo img {
           width: 280px; } }
   header nav .handle {
     width: 100%;
@@ -850,18 +898,21 @@ header {
     @media screen and (max-width: 955px) {
       header nav .handle {
         display: block; } }
-  header nav ul {
-    background-color: #4A7DB5;
-    overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    transition: max-height 400ms; }
-    header nav ul li {
-      display: inline-block;
-      padding: 15px; }
-      header nav ul li:hover {
-        background: #022750; }
+  header nav .navigation {
+    width: 100%; }
+    header nav .navigation ul {
+      background-color: #4A7DB5;
+      overflow: hidden;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      transition-property: max-height;
+      transition-duration: 400ms; }
+      header nav .navigation ul li {
+        display: inline-block;
+        padding: 15px; }
+        header nav .navigation ul li:hover {
+          background: #022750; }
 
 @media screen and (max-width: 955px) {
   ul {

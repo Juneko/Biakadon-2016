@@ -6,10 +6,17 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://use.fontawesome.com/b97ac5aa01.js"></script>
   </head>
   <body>
 
   {{ content }}
 
+
+  <script>
+    $('.handle').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+  </script>
   </body>
 </html>
