@@ -4,9 +4,13 @@
   h2
     margin: 0
     text-align: center
-    padding: 4rem 0
+    padding: 4rem 0 1rem 0
     @media  (max-width: 740px)
       padding: 2.5rem 0
+
+  h3
+    text-align: center
+    padding-bottom: 3rem
 
 
 .work-belt
@@ -21,12 +25,12 @@
 
 .thumb-container
   max-width: 60%
-  padding-bottom: 2rem
+  padding-bottom: 4rem
   margin: 0 auto
   +clearfix
 
   @media screen and (max-width: 1150px)
-    max-width: 80%
+    max-width: 90%
 
   .thumb-unit
     display: block
@@ -34,11 +38,6 @@
     margin: 0 .5% 10px .5%
     float: left
     position: relative
-    //overflow: hidden
-    //background:
-      position: center center
-      repeat: no-repeat
-      size: cover
     box-shadow: 0px 2px 4px rgba(0,0,0, .5)
     border-radius: 2px
     +perspective(300)
@@ -66,7 +65,7 @@
 
       @media screen and (max-width: 620px)
         +transform(none)
-        background: fade-out($text-color, 0.4)
+        background: fade-out($text-color, 1)
 
       strong
         display: block
@@ -79,7 +78,7 @@
         letter-spacing: 2px
 
         @media screen and (max-width: 620px)
-          font-size: 1rem
+          font-size: .9rem
           background: fade-out($text-color, 0.1)
           width: 100%
           padding: .2rem

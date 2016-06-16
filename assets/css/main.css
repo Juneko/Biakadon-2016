@@ -802,11 +802,16 @@ h1, h2, h3, h4, h5, p, a, strong, label {
   -webkit-font-smoothing: antialiased; }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #4A7DB5;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400; }
+
+h3 {
+  font-size: 1rem;
+  color: #4A7DB5;
+  font-weight: 100; }
 
 h5 {
   font-size: 1rem;
@@ -824,8 +829,8 @@ a {
   text-decoration: none; }
 
 p {
-  color: #777;
-  font-size: .9rem;
+  color: #555;
+  font-size: 1rem;
   font-weight: 300; }
 
 header {
@@ -933,13 +938,13 @@ header {
       .showing li a {
         font-size: .8rem; } }
 
-.banner_wrapper {
+.banner_wrapper, .banner_index {
   background-image: url(/assets/img/banner-bg.jpg);
   height: 20rem;
   background-size: cover;
   position: relative;
   margin: 0; }
-  .banner_wrapper .text_wrapper {
+  .banner_wrapper .text_wrapper, .banner_index .text_wrapper {
     display: block;
     width: 90%;
     margin: 0 auto;
@@ -949,27 +954,36 @@ header {
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0 5% 0 5%; }
-    .banner_wrapper .text_wrapper h1 {
+    .banner_wrapper .text_wrapper h1, .banner_index .text_wrapper h1 {
       display: block;
       color: white;
       font-size: 2.5rem;
       text-align: center;
       font-weight: 300;
       margin: 1rem auto -1rem auto; }
-    .banner_wrapper .text_wrapper p {
+    .banner_wrapper .text_wrapper p, .banner_index .text_wrapper p {
       color: white;
       font-size: 1rem;
       text-align: center;
       font-weight: 300;
       letter-spacing: 1px; }
-    @media screen and (max-width: 663px) {
-      .banner_wrapper .text_wrapper h1 {
-        font-size: 2rem;
-        line-height: 2.2rem; }
-      .banner_wrapper .text_wrapper p {
-        font-size: .8rem;
-        line-height: .9rem;
-        margin-top: 30px; } }
+
+.banner_fachadas {
+  background-image: url(/assets/img/banner-bg-fachadas.jpg);
+  height: 15rem;
+  background-size: cover;
+  position: relative;
+  margin: 0; }
+  .banner_fachadas .text_wrapper h1 {
+    margin: 1rem auto; }
+  @media screen and (max-width: 663px) {
+    .banner_fachadas .text_wrapper h1 {
+      font-size: 2rem;
+      line-height: 2.2rem; }
+    .banner_fachadas .text_wrapper p {
+      font-size: .8rem;
+      line-height: .9rem;
+      margin-top: 30px; } }
 
 .work-section {
   background-color: #eeeded;
@@ -977,10 +991,13 @@ header {
   .work-section h2 {
     margin: 0;
     text-align: center;
-    padding: 4rem 0; }
+    padding: 4rem 0 1rem 0; }
     @media (max-width: 740px) {
       .work-section h2 {
         padding: 2.5rem 0; } }
+  .work-section h3 {
+    text-align: center;
+    padding-bottom: 3rem; }
 
 .work-belt {
   width: 200%;
@@ -994,7 +1011,7 @@ header {
 
 .thumb-container {
   max-width: 60%;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin: 0 auto; }
   .thumb-container:after {
     content: "";
@@ -1002,7 +1019,7 @@ header {
     clear: both; }
   @media screen and (max-width: 1150px) {
     .thumb-container {
-      max-width: 80%; } }
+      max-width: 90%; } }
   .thumb-container .thumb-unit {
     display: block;
     width: 32%;
@@ -1051,7 +1068,7 @@ header {
         .thumb-container .thumb-unit .thumb-overlay {
           -webkit-transform: none;
           transform: none;
-          background: rgba(74, 125, 181, 0.6); } }
+          background: rgba(74, 125, 181, 0); } }
       .thumb-container .thumb-unit .thumb-overlay strong {
         display: block;
         color: #eeeded;
@@ -1063,7 +1080,7 @@ header {
         letter-spacing: 2px; }
         @media screen and (max-width: 620px) {
           .thumb-container .thumb-unit .thumb-overlay strong {
-            font-size: 1rem;
+            font-size: .9rem;
             background: rgba(74, 125, 181, 0.9);
             width: 100%;
             padding: .2rem; } }
