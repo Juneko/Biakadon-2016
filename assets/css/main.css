@@ -592,7 +592,9 @@ textarea {
   -webkit-backface-visibility: hidden; }
 
 .flexslider .slides img {
-  width: 100%;
+  max-height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
   display: block; }
 
 .flexslider .slides:after {
@@ -1251,7 +1253,18 @@ footer {
 .contact-section {
   background-color: #022750;
   width: 100%;
-  float: left; }
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 3rem; }
+  .contact-section .email {
+    font-size: 2rem;
+    text-transform: lowercase; }
+    @media screen and (max-width: 620px) {
+      .contact-section .email {
+        font-size: 1.5rem; } }
+  .contact-section .phone {
+    font-size: 2rem; }
   .contact-section h2 {
     margin: 0;
     text-align: center;
@@ -1260,8 +1273,9 @@ footer {
     width: 80%;
     max-width: 450px;
     margin: 0 auto;
-    padding-bottom: 50px;
-    position: relative; }
+    padding-bottom: 10px;
+    position: relative;
+    text-align: left; }
     @media screen and (max-width: 620px) {
       .contact-section .contact-wrap {
         width: 80%;
@@ -1334,15 +1348,17 @@ footer {
           padding: 20px 0;
           margin: 0 25%; } }
 
-.fachadas-comerciais .title {
-  margin: 0;
-  text-align: center;
-  padding: 4rem 0 2rem 0; }
-
-.fachadas-comerciais .description {
-  margin: 0 auto;
-  text-align: center;
+.fachadas-comerciais {
+  box-sizing: border-box;
   padding-bottom: 2rem; }
+  .fachadas-comerciais .title {
+    margin: 0;
+    text-align: center;
+    padding: 4rem 0 2rem 0; }
+  .fachadas-comerciais .description {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2rem; }
 
 .home-wrap {
   width: 100%; }
