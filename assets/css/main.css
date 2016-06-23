@@ -851,7 +851,7 @@ header {
       display: table;
       clear: both; }
     header .top-bar .contact-top-bar .phone i, header .top-bar .contact-top-bar .email i {
-      color: #022750; }
+      color: #044b9b; }
     header .top-bar .contact-top-bar .phone a, header .top-bar .contact-top-bar .email a {
       color: #4A7DB5;
       font-size: 1em;
@@ -880,7 +880,8 @@ header {
   header #logo {
     display: block;
     float: left;
-    padding: 2.5rem 0 2rem 2rem; }
+    padding: 2.5rem 0 2rem 2rem;
+    margin-left: 9%; }
     header #logo:after {
       content: "";
       display: table;
@@ -970,22 +971,28 @@ header {
       font-weight: 300;
       letter-spacing: 1px; }
 
-.banner_fachadas {
+.banner_fachadas, .banner_envelopamento, .banner_decoracao {
   background-image: url(/assets/img/banner-bg-fachadas.jpg);
   height: 15rem;
   background-size: cover;
   position: relative;
   margin: 0; }
-  .banner_fachadas .text_wrapper h1 {
+  .banner_fachadas .text_wrapper h1, .banner_envelopamento .text_wrapper h1, .banner_decoracao .text_wrapper h1 {
     margin: 1rem auto; }
   @media screen and (max-width: 663px) {
-    .banner_fachadas .text_wrapper h1 {
+    .banner_fachadas .text_wrapper h1, .banner_envelopamento .text_wrapper h1, .banner_decoracao .text_wrapper h1 {
       font-size: 2rem;
       line-height: 2.2rem; }
-    .banner_fachadas .text_wrapper p {
+    .banner_fachadas .text_wrapper p, .banner_envelopamento .text_wrapper p, .banner_decoracao .text_wrapper p {
       font-size: .8rem;
       line-height: .9rem;
       margin-top: 30px; } }
+
+.banner_envelopamento {
+  background-image: url(/assets/img/banner-bg-envelopamento.jpg); }
+
+.banner_decoracao {
+  background-image: url(/assets/img/banner-bg-decoracao.jpg); }
 
 .work-section {
   background-color: #eeeded;

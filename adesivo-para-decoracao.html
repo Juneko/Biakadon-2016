@@ -1,0 +1,28 @@
+---
+layout: default
+title: Biakadon - Comunicação Visual
+---
+
+<div class="home-wrap">
+
+  {% include header.html %}
+
+  {% include banner-decoracao.html %}
+
+  {% include decoracao.html %}
+
+  {% include contact.html %}
+
+  {% include footer.html %}
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/functions.js"></script>
+<script src="/assets/js/jquery.flexslider-min.js"></script>
+<script>
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+  });
+</script>
+</div>
