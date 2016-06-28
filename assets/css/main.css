@@ -881,11 +881,14 @@ header {
     display: block;
     float: left;
     padding: 2.5rem 0 2rem 2rem;
-    margin-left: 9%; }
+    margin-left: 12%; }
     header #logo:after {
       content: "";
       display: table;
       clear: both; }
+    @media screen and (max-width: 1200px) {
+      header #logo {
+        margin-left: 8%; } }
     @media screen and (max-width: 750px) {
       header #logo {
         margin: 0 auto;
