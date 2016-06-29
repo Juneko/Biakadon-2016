@@ -811,7 +811,7 @@ h2 {
   font-weight: 400; }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #4A7DB5;
   font-weight: 100; }
 
@@ -832,7 +832,7 @@ a {
 
 p {
   color: #555;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300; }
 
 header {
@@ -1369,6 +1369,22 @@ footer {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 2rem; }
+
+.obrigado-wrap {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center; }
+  .obrigado-wrap h1 {
+    color: #022750; }
+  .obrigado-wrap h2 {
+    color: #1b8520;
+    text-transform: inherit;
+    font-style: italic; }
+  .obrigado-wrap p {
+    text-align: center; }
+    .obrigado-wrap p a {
+      color: #022750;
+      font-size: 1.2rem; }
 
 .home-wrap {
   width: 100%; }
