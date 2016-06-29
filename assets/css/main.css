@@ -838,7 +838,8 @@ p {
 header {
   width: 100%;
   text-align: center;
-  margin: 0px; }
+  margin: 0px;
+  background-color: #f4f4f4; }
   header .top-bar:after {
     content: "";
     display: table;
