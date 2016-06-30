@@ -1,0 +1,17 @@
+@import "0-tools/normalize";
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/fonts";
+@import "0-tools/animations";
+@import "0-tools/spinner";
+@import "0-tools/flexslider";
+
+@import "1-base/vars";
+
+@import "3-sections/header";
+@import "3-sections/work";
+@import "3-sections/footer";
+@import "3-sections/contact";
+@import "3-sections/fachada";
+@import "3-sections/obrigado";
+
+@import "4-layouts/home";

@@ -1,0 +1,118 @@
+.contact-section
+  background-color: $accent-color
+  width: 100%
+  float: left
+  text-align: center
+
+  box-sizing: border-box
+  padding-bottom: 3rem
+
+  .email
+    font-size: 2rem
+    text-transform: lowercase
+
+    @media screen and (max-width: 620px)
+      font-size: 1.5rem
+
+  .phone
+    font-size: 2rem
+
+
+
+  h2
+    margin: 0
+    text-align: center
+    padding: 3rem 0 2rem  0
+
+  .contact-wrap
+    width: 80%
+    max-width: 450px
+    margin: 0 auto
+    padding-bottom: 10px
+    position: relative
+    text-align: left
+
+    @media screen and (max-width: 620px)
+      width: 80%
+      margin: 0 auto
+      padding: 0
+
+    form
+      width: 100%
+      margin: 0 auto
+      position: relative
+      .contact-name, .contact-email, .contact-message
+        width: 47%
+        margin-bottom: 15px
+
+      .contact-name
+        margin-right: 3px
+        float: left
+
+
+      .contact-email
+        float: right
+        margin-left: 3px
+
+      .contact-message
+        width: 100%
+        float: left
+        margin-bottom: 5px
+
+        textarea
+          width: 100%
+          border-radius: 2px
+          padding: .25rem
+          min-height: 8rem
+
+      .submit-button
+        padding: 0
+        margin: 0 30%
+        input[type="submit"]
+          width: 170px
+          margin: .8rem
+          color: white
+          background-color: #1b8520
+          border: none
+          border-radius: 20px
+          font-family: 'Fira Sans', sans-serif;
+          font-weight: 100
+          font-size: 1rem
+          cursor: pointer
+
+
+      label
+        display: block
+        margin: 10px 0 5px 0
+        color: white
+        font-weight: 100
+        font-size: .8rem
+
+      input
+        width: 100%
+        padding: .45rem
+        border-radius: 2px
+        margin: 0 auto
+        border: none
+        outline: none
+
+    @media screen and (max-width: 620px)
+
+      form
+        max-width: 100%
+        margin: 0 auto
+        padding: 0
+        .contact-name, .contact-email, .contact-message
+          width: 100%
+          float: none
+          margin: 0
+        input
+          max-width: 90%
+          margin-left: 0
+
+        textarea
+          max-width: 90%
+
+        .submit-button
+          padding: 20px 0
+          margin: 0 25%

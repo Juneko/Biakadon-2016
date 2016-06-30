@@ -1,0 +1,176 @@
+header
+	width: 100%
+	text-align: center
+	margin: 0px
+	background-color: #f4f4f4
+
+	.top-bar
+		//width: 100%
+		+clearfix
+		.contact-top-bar
+			float: right
+			padding: 40px 40px 0 0
+			+clearfix
+
+			.phone, .email
+
+				i
+					color: lighten($accent-color, 15%)
+				a
+					color: $text-color
+					font-size: 1em
+					font-weight: 400
+					margin-left: .4rem
+					text-transform: inherit
+
+
+
+	.social-media
+		height: 20px
+		padding: 10px
+		.fa-facebook-square
+			color: #3b5998
+		.fa-linkedin-square
+			color: #0077b5
+		.fa-pinterest-square
+			color: #cb2027
+		i
+			padding: 0 10px
+
+	@media screen and (max-width: 750px)
+		.social-media
+			margin: 0 auto
+			float: none
+		.top-bar
+			.contact-top-bar
+				float: none
+				margin: 0
+				padding: 40px 0 0 0
+	#logo
+		display: block
+		float: left
+		padding: 2.5rem 0 2rem 2rem
+		margin-left: 12%
+		+clearfix
+		@media screen and (max-width: 1200px)
+			margin-left: 8%
+		@media screen and (max-width: 750px)
+			margin: 0 auto
+			float: none
+			padding: 2.5rem 0 2rem 0
+		img
+			width: 370px
+
+			@media screen and (max-width: 430px)
+				width: 280px
+	nav
+		.handle
+			width: 100%
+			background-color: $accent-color
+			text-align: left
+			box-sizing: border-box
+			padding: 15px 10px
+			color: lighten($text-color, 0.1)
+			cursor: pointer
+			display: none
+			.icon
+				float: right
+				font-size: 1.4rem
+				padding: 0
+				margin: -6px 0 0 0
+
+			@media screen and (max-width: 955px)
+				display: block
+		.navigation
+			width: 100%
+			ul
+				background-color: $text-color
+				overflow: hidden
+				list-style: none
+				margin: 0
+				padding: 0
+				+transition-property(max-height)
+				+transition-duration(400ms)
+
+				li
+					display: inline-block
+					padding: 15px
+					&:hover
+						background: $accent-color
+
+
+
+@media screen and (max-width: 955px)
+	ul
+		max-height: 0
+	.showing
+		max-height: 20em
+		li
+			box-sizing: border-box
+			width: 100%
+			text-align: left
+			a
+				font-size: .8rem
+
+
+
+
+.banner_wrapper, .banner_index
+	background-image: url(/assets/img/banner-bg.jpg)
+	height: 20rem
+	background-size: cover
+	position: relative
+	margin: 0
+
+	.text_wrapper
+		display: block
+		width: 90%
+		margin: 0 auto
+		background-color: rgba($accent-color, .8)
+		position: absolute
+		top: 50%
+		+transform(translate(0, -50%))
+		padding: 0 5% 0 5%
+
+		h1
+			display: block
+			color: white
+			font-size: 2.5rem
+			text-align: center
+			font-weight: 300
+			margin: 1rem auto -1rem auto
+		p
+			color: white
+			font-size: 1rem
+			text-align: center
+			font-weight: 300
+			letter-spacing: 1px
+
+.banner_fachadas, .banner_envelopamento, .banner_decoracao
+	background-image: url(/assets/img/banner-bg-fachadas.jpg)
+	height: 15rem
+	background-size: cover
+	position: relative
+	margin: 0
+
+
+	.text_wrapper
+
+		h1
+			margin: 1rem auto
+
+
+		@media screen and (max-width: 663px)
+			h1
+				font-size: 2rem
+				line-height: 2.2rem
+			p
+				font-size: .8rem
+				line-height: .9rem
+				margin-top: 30px
+
+
+.banner_envelopamento
+	background-image: url(/assets/img/banner-bg-envelopamento.jpg)
+.banner_decoracao
+	background-image: url(/assets/img/banner-bg-decoracao.jpg)
