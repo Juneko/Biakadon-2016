@@ -31,7 +31,7 @@ function workBelt() {
 
 function workLoad() {
 
-  $.ajaxSetup({ cache: false });
+  $.ajaxSetup({ cache: true });
 
   $('.thumb-unit').click(function(){
 
