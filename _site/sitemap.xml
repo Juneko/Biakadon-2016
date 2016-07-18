@@ -2,76 +2,166 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
+  
+    
+      <url>
 
-    <loc>http://www.biakadon.com.br/404.html</loc>
+  <loc>http://www.biakadon.com.br/404.html</loc>
 
-  </url>
+  
 
-  <url>
+  
 
-    <loc>http://www.biakadon.com.br/adesivo-decorativo-de-parede.html</loc>
+  
+</url>
+
+    
+  
+    
+      <url>
+
+  <loc>http://www.biakadon.com.br/adesivo-decorativo-de-parede.html</loc>
+
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>0.8</priority>
+  
+</url>
 
-  </url>
+    
+  
+    
+      <url>
 
-  <url>
+  <loc>http://www.biakadon.com.br/envelopamento-veiculos.html</loc>
 
-    <loc>http://www.biakadon.com.br/envelopamento-veiculos.html</loc>
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>0.8</priority>
+  
+</url>
 
-  </url>
+    
+  
+    
+      <url>
 
-  <url>
+  <loc>http://www.biakadon.com.br/fachada-comercial.html</loc>
 
-    <loc>http://www.biakadon.com.br/fachada-comercial.html</loc>
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>0.9</priority>
+  
+</url>
 
-  </url>
+    
+  
+    
+      <url>
 
-  <url>
+  <loc>http://www.biakadon.com.br/</loc>
 
-    <loc>http://www.biakadon.com.br/</loc>
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>1</priority>
+  
+</url>
 
-  </url>
+    
+  
+    
+      <url>
 
-  <url>
+  <loc>http://www.biakadon.com.br/letra-caixa.html</loc>
 
-    <loc>http://www.biakadon.com.br/letra-caixa.html</loc>
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>0.9</priority>
+  
+</url>
 
-  </url>
-  <url>
+    
+  
+    
+      <url>
 
-    <loc>http://www.biakadon.com.br/obrigado-pelo-contato.html</loc>
+  <loc>http://www.biakadon.com.br/obrigado-pelo-contato.html</loc>
+
+  
     <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
     <priority>0</priority>
+  
+</url>
 
-  </url>
-
-<url>
+    
+  
+    
+      <url>
 
   <loc>http://www.biakadon.com.br/sinalizacao-interna.html</loc>
-  <lastmod>2016-06-30</lastmod>
-  <priority>0.6</priority>
 
+  
+    <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
+    <priority>0.6</priority>
+  
 </url>
 
-<url>
+    
+  
+    
+  
+    
+      <url>
 
   <loc>http://www.biakadon.com.br/totem-sinalizacao.html</loc>
-  <lastmod>2016-06-30</lastmod>
-  <priority>0.8</priority>
 
+  
+    <lastmod>2016-06-30</lastmod>
+  
+
+  
+
+  
+    <priority>0.8</priority>
+  
 </url>
 
-
-
+    
+  
 
 </urlset>
