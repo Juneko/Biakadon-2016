@@ -1,25 +1,29 @@
-header
+header(itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness")
 	.top-bar
 		.contact-top-bar
 			.phone
 				i.fa.fa-phone
-				a(href="tel:47891234") (11) 4789-1234
+				a(href="tel:47891234") 
+					span(itemprop="telephone") (11) 4789-1234
 			.email
 				i.fa.fa-envelope
-				a(href="mailto:sitecontato@biakadon.com.br") contato@biakadon.com.br
+				a(href="mailto:sitecontato@biakadon.com.br", itemprop="email") contato@biakadon.com.br
 				
 			.social-media
 				a(href="https://www.facebook.com/biakadon", target="_blank")
 					i.fa.fa-facebook-square.fa-2x
 				a(href="https://www.linkedin.com/company/biakadon-solu%C3%A7%C3%B5es-em-comunica%C3%A7%C3%A3o-visual", target="_blank")
 					i.fa.fa-linkedin-square.fa-2x
-				a(href="https://br.pinterest.com/biakadon", target="_blank")			
+				a(href="https://br.pinterest.com/biakadon", target="_blank")
 					i.fa.fa-pinterest-square.fa-2x
 			
 		
 		
 		a#logo(href="index.html")
 			img(src="assets/img/logo.png", alt="Logotipo Biakadon")
+			
+		p.name 
+			span(itemprop="name") Biakadon - Soluções em Comunicação Visual
 		
 	nav
 		.handle Menu

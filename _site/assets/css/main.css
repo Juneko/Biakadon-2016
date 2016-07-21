@@ -900,6 +900,8 @@ header {
       @media screen and (max-width: 430px) {
         header #logo img {
           width: 280px; } }
+  header .name {
+    display: none; }
   header nav .handle {
     width: 100%;
     background-color: #022750;
@@ -1366,6 +1368,8 @@ footer {
     margin: 0;
     text-align: center;
     padding: 4rem 0 2rem 0; }
+    .fachadas-comerciais .title p {
+      display: none; }
   .fachadas-comerciais .description {
     margin: 0 auto;
     text-align: center;
