@@ -812,9 +812,9 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: #022750;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: .9;
   display: none; }
 
 .lightbox {
@@ -917,6 +917,7 @@ body.lb-disable-scrolling {
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
+  background-color: #1b3d61;
   *zoom: 1;
   width: 100%;
   border-bottom-left-radius: 4px;
@@ -938,9 +939,10 @@ body.lb-disable-scrolling {
   line-height: 1.1em; }
 
 .lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1em; }
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-indent: 2rem; }
 
 .lb-data .lb-number {
   display: block;
@@ -1470,9 +1472,10 @@ header {
 
 footer {
   width: 100%;
-  clear: both; }
+  clear: both;
+  margin: 0; }
   footer .lockup {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
     padding: 30px 0;
     margin: 0 auto; }
@@ -1537,9 +1540,11 @@ footer {
           margin-top: 40px; } }
 
 .bottom-wrapper {
+  height: 100px;
   background-color: #777;
   clear: both;
-  padding: 20px; }
+  padding: 20px;
+  margin: 0; }
   .bottom-wrapper h5 {
     text-align: center;
     padding: 5px;
@@ -1550,7 +1555,7 @@ footer {
     font-style: italic;
     text-align: center;
     margin: 0;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     text-transform: uppercase;
     color: white;
     clear: both; }

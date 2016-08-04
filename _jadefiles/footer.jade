@@ -1,5 +1,5 @@
-footer(span itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness").wrapper-wide
-  .lockup
+footer(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress").home-wrap
+  .lockup.wrapper
     a#logo(href="#").logo-footer {% include icons/icon-b.html %}
 
     .content-wrap
@@ -18,6 +18,7 @@ footer(span itemprop="provider" itemscope itemtype="http://schema.org/LocalBusin
           i.fa.fa-linkedin-square.fa-2x
         a(href="https://br.pinterest.com/biakadon/", target="_blank")
           i.fa.fa-pinterest-square.fa-2x
-.bottom-wrapper
-  h5.description-footer BIAKADON - Soluções em Comunicação Visual &reg;      
-  p.copyright.home-wrap &copy;Todos os Direitos Reservados - 2016
+  .bottom-wrapper
+    h5.description-footer BIAKADON - Soluções em Comunicação Visual &reg;      
+    p.copyright <span itemprop="addressLocality">Barueri</span> - <span itemprop="addressRegion">São Paulo</span>
+    p.copyright.home-wrap &copy;Todos os Direitos Reservados - 2016
