@@ -1,0 +1,67 @@
+.banner_wrapper, .banner_index
+	background-image: url(/assets/img/banner-bg.jpg)
+	width: 100%
+	height: 20rem
+	background-size: cover
+	margin: 0
+	padding: 0
+	z-index: 0
+
+	.text_wrapper
+		display: block
+		width: 100%
+		height: 170px
+		margin: 0 auto
+		background-color: rgba($accent-color, .8)
+		position: relative
+		top: 50%
+		+transform(translate(0, -50%))
+		padding: 10px
+		box-sizing: border-box
+		z-index: 0
+
+		h1
+			display: block
+			color: white
+			font-size: 2.5rem
+			text-align: center
+			font-weight: 300
+			margin: 1rem auto -1rem auto
+
+		p
+			color: white
+			font-size: 1rem
+			text-align: center
+			font-weight: 300
+			letter-spacing: 1px
+
+	.nosub
+		height: 120px
+
+.banner_fachadas, .banner_envelopamento, .banner_decoracao
+	background-image: url(/assets/img/banner-bg-fachadas.jpg)
+	height: 15rem
+	background-size: cover
+
+
+
+	.text_wrapper
+
+		h1
+			margin: 1rem auto -1rem auto
+
+
+		@media screen and (max-width: 663px)
+			h1
+				font-size: 2rem
+				line-height: 2.2rem
+			p
+				font-size: .8rem
+				line-height: .9rem
+				margin-top: 30px
+
+
+.banner_envelopamento
+	background-image: url(/assets/img/banner-bg-envelopamento.jpg)
+.banner_decoracao
+	background-image: url(/assets/img/banner-bg-decoracao.jpg)

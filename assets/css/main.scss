@@ -5,13 +5,19 @@
 @import "0-tools/spinner";
 @import "0-tools/flexslider";
 
+@import "0-tools/lightbox";
+
 @import "1-base/vars";
 
 @import "3-sections/header";
+@import "3-sections/header2";
+@import "3-sections/banner";
 @import "3-sections/work";
 @import "3-sections/footer";
 @import "3-sections/contact";
 @import "3-sections/fachada";
+@import "3-sections/letra-caixa";
+@import "3-sections/letra-caixa-2";
 @import "3-sections/obrigado";
 
 @import "4-layouts/home";

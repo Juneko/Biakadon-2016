@@ -2,6 +2,7 @@ $(function() {
   smoothScrool(800);
   workBelt();
   workLoad();
+  openSubmenu();
 });
 
 function smoothScrool (duration){
@@ -46,4 +47,11 @@ function workLoad() {
     $('.project-title').text(newTitle);
 
   });
+}
+
+function openSubmenu() {
+  $('.nav-toggle').on('click', function(){
+    $('.nav-content').toggleClass('open');
+  });
+
 }
