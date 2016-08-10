@@ -1265,6 +1265,9 @@ header {
     padding: 10px;
     box-sizing: border-box;
     z-index: 0; }
+    @media screen and (max-width: 663px) {
+      .banner_wrapper .text_wrapper, .banner_index .text_wrapper {
+        height: 220px; } }
     .banner_wrapper .text_wrapper h1, .banner_index .text_wrapper h1 {
       display: block;
       color: white;
@@ -1272,6 +1275,10 @@ header {
       text-align: center;
       font-weight: 300;
       margin: 1rem auto -1rem auto; }
+      @media screen and (max-width: 663px) {
+        .banner_wrapper .text_wrapper h1, .banner_index .text_wrapper h1 {
+          font-size: 2rem;
+          line-height: 2.7rem; } }
     .banner_wrapper .text_wrapper p, .banner_index .text_wrapper p {
       color: white;
       font-size: 1rem;
@@ -1285,16 +1292,20 @@ header {
   background-image: url(/assets/img/banner-bg-fachadas.jpg);
   height: 15rem;
   background-size: cover; }
-  .banner_fachadas .text_wrapper h1, .banner_envelopamento .text_wrapper h1, .banner_decoracao .text_wrapper h1 {
-    margin: 1rem auto -1rem auto; }
-  @media screen and (max-width: 663px) {
+  .banner_fachadas .text_wrapper, .banner_envelopamento .text_wrapper, .banner_decoracao .text_wrapper {
+    height: 150px; }
     .banner_fachadas .text_wrapper h1, .banner_envelopamento .text_wrapper h1, .banner_decoracao .text_wrapper h1 {
-      font-size: 2rem;
-      line-height: 2.2rem; }
-    .banner_fachadas .text_wrapper p, .banner_envelopamento .text_wrapper p, .banner_decoracao .text_wrapper p {
-      font-size: .8rem;
-      line-height: .9rem;
-      margin-top: 30px; } }
+      margin: 1rem auto -1rem auto; }
+    @media screen and (max-width: 663px) {
+      .banner_fachadas .text_wrapper, .banner_envelopamento .text_wrapper, .banner_decoracao .text_wrapper {
+        height: 140px; }
+        .banner_fachadas .text_wrapper h1, .banner_envelopamento .text_wrapper h1, .banner_decoracao .text_wrapper h1 {
+          font-size: 2rem;
+          line-height: 2.2rem; }
+        .banner_fachadas .text_wrapper p, .banner_envelopamento .text_wrapper p, .banner_decoracao .text_wrapper p {
+          font-size: .8rem;
+          line-height: .9rem;
+          margin-top: 30px; } }
 
 .banner_envelopamento {
   background-image: url(/assets/img/banner-bg-envelopamento.jpg); }
