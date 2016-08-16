@@ -2,17 +2,19 @@ header
 	width: 100%
 	text-align: center
 	margin: 0px
-	background-color: #fbfbfb
+	background-color: #ededed
 
 
 	.top-bar
-		//width: 100%
 		+clearfix
 		.contact-top-bar
 			float: right
-			padding: 40px 40px 0 0
+			padding: 20px 20px 0 0
 			+clearfix
 
+		@media screen and (max-width: 808px)
+			width: 100%
+			
 			.phone, .email
 
 				i
@@ -38,7 +40,7 @@ header
 		i
 			padding: 0 10px
 
-	@media screen and (max-width: 750px)
+	@media screen and (max-width: 808px)
 		.social-media
 			margin: 0 auto
 			float: none
@@ -50,17 +52,16 @@ header
 	#logo
 		display: block
 		float: left
-		padding: 2.5rem 0 2rem 2rem
-		margin-left: 12%
+		padding: 1.5rem 0 1.5rem 0
 		+clearfix
 		@media screen and (max-width: 1200px)
 			margin-left: 8%
-		@media screen and (max-width: 750px)
+		@media screen and (max-width: 808px)
 			margin: 0 auto
 			float: none
 			padding: 2.5rem 0 2rem 0
 		img
-			width: 370px
+			width: 280px
 
 			@media screen and (max-width: 430px)
 				width: 280px

@@ -1120,26 +1120,29 @@ header {
   width: 100%;
   text-align: center;
   margin: 0px;
-  background-color: #fbfbfb; }
+  background-color: #ededed; }
   header .top-bar:after {
     content: "";
     display: table;
     clear: both; }
   header .top-bar .contact-top-bar {
     float: right;
-    padding: 40px 40px 0 0; }
+    padding: 20px 20px 0 0; }
     header .top-bar .contact-top-bar:after {
       content: "";
       display: table;
       clear: both; }
-    header .top-bar .contact-top-bar .phone i, header .top-bar .contact-top-bar .email i {
-      color: #044b9b; }
-    header .top-bar .contact-top-bar .phone a, header .top-bar .contact-top-bar .email a {
-      color: #4A7DB5;
-      font-size: 1em;
-      font-weight: 400;
-      margin-left: .4rem;
-      text-transform: inherit; }
+  @media screen and (max-width: 808px) {
+    header .top-bar {
+      width: 100%; }
+      header .top-bar .phone i, header .top-bar .email i {
+        color: #044b9b; }
+      header .top-bar .phone a, header .top-bar .email a {
+        color: #4A7DB5;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: .4rem;
+        text-transform: inherit; } }
   header .social-media {
     height: 20px;
     padding: 10px; }
@@ -1151,7 +1154,7 @@ header {
       color: #cb2027; }
     header .social-media i {
       padding: 0 10px; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 808px) {
     header .social-media {
       margin: 0 auto;
       float: none; }
@@ -1162,8 +1165,7 @@ header {
   header #logo {
     display: block;
     float: left;
-    padding: 2.5rem 0 2rem 2rem;
-    margin-left: 12%; }
+    padding: 1.5rem 0 1.5rem 0; }
     header #logo:after {
       content: "";
       display: table;
@@ -1171,13 +1173,13 @@ header {
     @media screen and (max-width: 1200px) {
       header #logo {
         margin-left: 8%; } }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 808px) {
       header #logo {
         margin: 0 auto;
         float: none;
         padding: 2.5rem 0 2rem 0; } }
     header #logo img {
-      width: 370px; }
+      width: 280px; }
       @media screen and (max-width: 430px) {
         header #logo img {
           width: 280px; } }
@@ -1267,7 +1269,7 @@ header {
     z-index: 0; }
     @media screen and (max-width: 663px) {
       .banner_wrapper .text_wrapper, .banner_index .text_wrapper {
-        height: 220px; } }
+        height: 250px; } }
     .banner_wrapper .text_wrapper h1, .banner_index .text_wrapper h1 {
       display: block;
       color: white;
@@ -1760,22 +1762,27 @@ footer {
     display: block;
     padding: 1px;
     max-height: inherit;
-    margin: 1rem 0 0 2rem; }
-  @media screen and (max-width: 958px) {
+    margin: 1rem 0 0 2rem;
+    list-style: inside; }
+    .letra-caixa-session .list ul .description-list {
+      font-style: italic;
+      margin-top: auto; }
+  @media screen and (max-width: 400px) {
     .letra-caixa-session .list {
-      margin: 1rem 0 0 1rem; } }
+      margin: 0; } }
   .letra-caixa-session .list a {
     color: #4A7DB5;
     text-transform: none;
     font-size: 1.1rem;
     font-weight: 300; }
   .letra-caixa-session .thumbnails {
-    display: block; }
+    display: block;
+    margin: 2rem auto; }
     .letra-caixa-session .thumbnails:after {
       content: "";
       display: table;
       clear: both; }
-    .letra-caixa-session .thumbnails:hover img {
+    .letra-caixa-session .thumbnails:hover img, .letra-caixa-session .thumbnails:hover .thumb-description {
       opacity: .6;
       -webkit-transform: scale(0.95);
               transform: scale(0.95); }
@@ -1789,6 +1796,16 @@ footer {
         content: "";
         display: table;
         clear: both; }
+      .letra-caixa-session .thumbnails a .thumb-description {
+        display: block;
+        font-size: .9rem;
+        text-transform: none;
+        letter-spacing: normal; }
+        .letra-caixa-session .thumbnails a .thumb-description:hover {
+          opacity: 1; }
+        @media screen and (max-width: 400px) {
+          .letra-caixa-session .thumbnails a .thumb-description {
+            font-size: .7rem; } }
       .letra-caixa-session .thumbnails a img {
         width: 100%;
         height: auto;
@@ -1803,6 +1820,25 @@ footer {
     @media screen and (max-width: 958px) {
       .letra-caixa-session .thumbnails a {
         width: 50%; } }
+  .letra-caixa-session .text-cta {
+    max-width: 350px;
+    text-align: center;
+    background-color: #1b8520;
+    color: white;
+    margin: 0 auto 2rem auto;
+    padding: 10px;
+    border-radius: 20px; }
+    .letra-caixa-session .text-cta:hover {
+      background-color: #125815;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 400px) {
+      .letra-caixa-session .text-cta {
+        font-size: 1rem;
+        max-width: 200px;
+        background-color: #1b8520;
+        box-shadow: none;
+        padding: 10px;
+        border-radius: 20px; } }
 
 .obrigado-wrap {
   margin: 0 auto;
