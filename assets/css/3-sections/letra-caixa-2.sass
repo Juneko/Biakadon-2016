@@ -53,7 +53,7 @@
     +clearfix
     &:hover
       img, .thumb-description
-        opacity: .6
+        opacity: .9 
         transform: scale(.95)
     a
       float: left
@@ -62,16 +62,6 @@
       padding-right: 15px
       box-sizing: border-box
       margin-bottom: 15px
-
-      .thumb-description
-        display: block
-        font-size: .9rem
-        text-transform: none
-        letter-spacing: normal
-        &:hover
-          opacity: 1
-        @media screen and (max-width: 400px)
-          font-size: .7rem
 
       img
         width: 100%
@@ -84,6 +74,17 @@
           opacity: 1
           transform: scale(1)
           box-shadow: 0 0 7px rgba(0, 0, 0, .5)
+
+      .thumb-description
+        display: block
+        font-size: .9rem
+        text-transform: none
+        letter-spacing: normal
+        &:hover
+          opacity: 1
+        @media screen and (max-width: 400px)
+          font-size: .7rem
+
     @media screen and (max-width: 958px)
       a
         width: 50%

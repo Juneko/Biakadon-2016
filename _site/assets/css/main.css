@@ -1465,14 +1465,15 @@ header {
     .work-container .work-return-bottom:hover {
       opacity: 1; }
   .work-container .see-more {
-    margin: 0 auto;
+    max-width: 350px;
     text-align: center;
-    color: #022750;
-    font-weight: 400;
-    font-size: .9rem;
-    padding: 2rem; }
+    background-color: #1b8520;
+    color: white;
+    margin: 2rem auto 2rem auto;
+    padding: 10px;
+    border-radius: 20px; }
     .work-container .see-more:hover {
-      color: #4A7DB5; }
+      background-color: #156b19; }
 
 @media (max-width: 740px) {
   .work-container {
@@ -1783,7 +1784,7 @@ footer {
       display: table;
       clear: both; }
     .letra-caixa-session .thumbnails:hover img, .letra-caixa-session .thumbnails:hover .thumb-description {
-      opacity: .6;
+      opacity: .9;
       -webkit-transform: scale(0.95);
               transform: scale(0.95); }
     .letra-caixa-session .thumbnails a {
@@ -1796,16 +1797,6 @@ footer {
         content: "";
         display: table;
         clear: both; }
-      .letra-caixa-session .thumbnails a .thumb-description {
-        display: block;
-        font-size: .9rem;
-        text-transform: none;
-        letter-spacing: normal; }
-        .letra-caixa-session .thumbnails a .thumb-description:hover {
-          opacity: 1; }
-        @media screen and (max-width: 400px) {
-          .letra-caixa-session .thumbnails a .thumb-description {
-            font-size: .7rem; } }
       .letra-caixa-session .thumbnails a img {
         width: 100%;
         height: auto;
@@ -1817,6 +1808,16 @@ footer {
           -webkit-transform: scale(1);
                   transform: scale(1);
           box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
+      .letra-caixa-session .thumbnails a .thumb-description {
+        display: block;
+        font-size: .9rem;
+        text-transform: none;
+        letter-spacing: normal; }
+        .letra-caixa-session .thumbnails a .thumb-description:hover {
+          opacity: 1; }
+        @media screen and (max-width: 400px) {
+          .letra-caixa-session .thumbnails a .thumb-description {
+            font-size: .7rem; } }
     @media screen and (max-width: 958px) {
       .letra-caixa-session .thumbnails a {
         width: 50%; } }

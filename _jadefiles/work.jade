@@ -5,7 +5,12 @@ section.work-section
   .work-belt
     .thumb-wrap
       //THUMBS
-      .thumb-container
+      .thumb-container  
+        .thumb-unit(data-folder="proj-6")
+          img(src="assets/img/work/proj-6/thumb.jpg", alt="letra-caixa")
+          .thumb-overlay
+            strong Letra Caixa
+            
         .thumb-unit(data-folder="proj-1")
           img(src="assets/img/work/proj-1/thumb.jpg", alt="Fachadas")
           .thumb-overlay
@@ -34,16 +39,15 @@ section.work-section
             strong Totens
 
         
-        .thumb-unit(data-folder="proj-6")
-          img(src="assets/img/work/proj-6/thumb.jpg", alt="Faixas e Banners")
-          .thumb-overlay
-            strong Letra Caixa
+        
 
     .work-wrap  
       //work
       .work-container
         .work-return {% include icons/icon-back.html %}
-        h4.project-title Get shit done
+        h4.project-title
         .project-load
         
-        .work-return-bottom {% include icons/icon-back.html %}
+        .work-return-bottom 
+          a(href="#servicos")
+            {% include icons/icon-back.html %}
