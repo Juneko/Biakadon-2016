@@ -1,5 +1,4 @@
-
-.letra-caixa-session
+.letra-caixa-session, .fachadas-comerciais
   box-sizing: border-box
   padding-bottom: 2rem
   height: inherit
@@ -23,15 +22,24 @@
     padding-bottom: 0
     text-indent: 3rem
     +clearfix
+    a
+     color: $text-color
+     text-transform: none
+     font-size: 1.1rem
+     font-weight: 400
 
   .list
+    max-width: 100%
     ul
       display: block
       padding: 1px
       max-height: inherit
-      margin: 1rem 0 0 2rem
+      margin: 0 0 0 2rem
       li
       list-style: inside
+      text-align: justify
+      p
+        text-indent: 1rem
 
       .description-list
         font-style: italic
@@ -43,7 +51,7 @@
       color: $text-color
       text-transform: none
       font-size: 1.1rem
-      font-weight: 300
+      font-weight: 400
 
 
 
@@ -53,7 +61,7 @@
     +clearfix
     &:hover
       img, .thumb-description
-        opacity: .9 
+        opacity: .9
         transform: scale(.95)
     a
       float: left
@@ -97,6 +105,7 @@
     margin: 0 auto 2rem auto
     padding: 10px
     border-radius: 20px
+    font-size: 1.2rem
     &:hover
       background-color: #125815
       box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
