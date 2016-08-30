@@ -1326,7 +1326,6 @@ header {
   background-image: url(/assets/img/banner-bg-decoracao.jpg); }
 
 .work-section {
-  background-color: #eeeded;
   overflow: hidden; }
   .work-section h2 {
     margin: 0;
@@ -1350,7 +1349,7 @@ header {
   float: left; }
 
 .thumb-container {
-  max-width: 60%;
+  max-width: 80%;
   padding-bottom: 4rem;
   margin: 0 auto; }
   .thumb-container:after {
@@ -1742,10 +1741,9 @@ footer {
     font-weight: 400;
     font-size: 1.2rem;
     text-indent: 3rem; }
-    .letra-caixa-session .subtitle:after, .fachadas-comerciais .subtitle:after {
-      content: "";
-      display: table;
-      clear: both; }
+  .letra-caixa-session .gallery-title, .fachadas-comerciais .gallery-title {
+    margin: 25px auto;
+    text-align: center; }
   .letra-caixa-session .description, .fachadas-comerciais .description {
     margin: 0 auto;
     text-align: justify;
