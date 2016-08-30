@@ -1325,19 +1325,6 @@ header {
 .banner_decoracao {
   background-image: url(/assets/img/banner-bg-decoracao.jpg); }
 
-.work-section {
-  overflow: hidden; }
-  .work-section h2 {
-    margin: 0;
-    text-align: center;
-    padding: 4rem 0 1rem 0; }
-    @media (max-width: 740px) {
-      .work-section h2 {
-        padding: 2.5rem 0; } }
-  .work-section h3 {
-    text-align: center;
-    padding-bottom: 3rem; }
-
 .work-belt {
   width: 200%;
   position: relative;
@@ -1349,7 +1336,7 @@ header {
   float: left; }
 
 .thumb-container {
-  max-width: 80%;
+  max-width: 75%;
   padding-bottom: 4rem;
   margin: 0 auto; }
   .thumb-container:after {
@@ -1691,47 +1678,11 @@ footer {
           padding: 20px 0;
           margin: 0 25%; } }
 
-.letra-caixa-session {
-  box-sizing: border-box;
-  padding-bottom: 2rem; }
-  .letra-caixa-session .title {
-    margin: 0 auto;
-    text-align: center;
-    padding: 4rem 0 2rem 0; }
-  .letra-caixa-session .description {
-    margin: 0 auto;
-    text-align: justify;
-    padding-bottom: 2rem; }
-  .letra-caixa-session .thumbnails:hover img {
-    opacity: .6;
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95); }
-  .letra-caixa-session .thumbnails a {
-    float: left;
-    width: 33%;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin-bottom: 15px; }
-    .letra-caixa-session .thumbnails a:after {
-      content: "";
-      display: table;
-      clear: both; }
-    .letra-caixa-session .thumbnails a img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 5px;
-      transition: all 0.2s ease-in-out; }
-      .letra-caixa-session .thumbnails a img:hover {
-        opacity: 1;
-        -webkit-transform: rotate(-2deg) scale(1);
-                transform: rotate(-2deg) scale(1);
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.5); }
-
 .letra-caixa-session, .fachadas-comerciais {
   box-sizing: border-box;
   padding-bottom: 2rem;
-  height: inherit; }
+  height: inherit;
+  overflow: hidden; }
   .letra-caixa-session .title, .fachadas-comerciais .title {
     margin: 0 auto;
     text-align: center;
