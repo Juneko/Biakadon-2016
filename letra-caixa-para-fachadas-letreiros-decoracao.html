@@ -2,7 +2,7 @@
 layout: default
 title: Letra Caixa para fachadas, letreiros e decoração - Biakadon
 meta: Letra Caixa personalizada de alta qualidade e ótimo valor. Chame a atenção de novos clientes e aumente suas vendas - F. (11) 4789.1234
-lastmod: 2016-08-24
+lastmod: 2016-09-19
 priority: .9
 ---
 
@@ -12,7 +12,7 @@ priority: .9
 
   {% include banner-letra-caixa.html %}
 
-  {% include letra-caixa-2.html %}
+  {% include letra-caixa.html %}
 
   {% include contact.html %}
 
@@ -20,5 +20,12 @@ priority: .9
 
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="/assets/js/functions.js"></script>
-<script src="/assets/js/lightbox-plus-jquery.min.js"></script>
+<script src="/assets/js/jquery.flexslider-min.js"></script>
+<script>
+  $(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+  });
+</script>
 </div>
