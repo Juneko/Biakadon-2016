@@ -1,2 +1,4 @@
 User-Agent: *
+Sitemap: http://www.biakadon.com.br/sitemap.xml
+Sitemap: http://www.biakadon.com.br/images_sitemap.xml
 Disallow:
