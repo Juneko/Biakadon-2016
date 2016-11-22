@@ -35,3 +35,8 @@
 <ifModule mod_headers.c>
     Header set Connection keep-alive
 </ifModule>
+
+## Pretty URL ##
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
